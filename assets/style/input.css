@@ -116,7 +116,7 @@
 }
 
 .content-wrapper {
-  @apply w-full h-full flex flex-col justify-between;
+  @apply w-full h-full flex flex-col justify-between gap-6;
 }
 
 .main-content {
@@ -180,4 +180,29 @@
 
 .paginations .step-btn:hover {
   @apply bg-gainsboro text-outer-space;
+}
+
+.table-content {
+  @apply w-full overflow-x-auto;
+}
+
+.table-content table {
+  @apply w-full;
+}
+
+.table-content table thead {
+  @apply bg-taupe-gray bg-opacity-10;
+}
+
+.table-action-btn {
+  @apply min-w-8 min-h-8 flex items-center justify-center;
+}
+
+.table-content table td,
+.table-content table th {
+  @apply py-4 px-3 text-left;
+}
+
+.table-content table tbody tr:nth-child(even) {
+  @apply bg-taupe-gray bg-opacity-5;
 }
