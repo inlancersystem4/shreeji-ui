@@ -693,8 +693,33 @@ video {
 }
 
 .form-group input{
+  width: 100%;
+  border-radius: 10px;
   border-width: 1px;
   border-color: transparent;
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--light-silver) / var(--tw-border-opacity, 1));
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  font-family: Inter, serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: hsl(var(--onyx-black) / var(--tw-text-opacity, 1));
+  box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
+}
+
+.form-group label{
+  display: block;
+  width: 100%;
+  font-family: Inter, serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: hsl(var(--charcoal-gray) / var(--tw-text-opacity, 1));
 }
 
 .form-group.error .error-message{
@@ -704,6 +729,20 @@ video {
 .form-group.error input{
   --tw-border-opacity: 1;
   border-color: hsl(var(--crimson-red) / var(--tw-border-opacity, 1));
+  padding-right: 2rem;
+}
+
+.form-group .error-icon{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0.5rem;
+  display: none;
+  height: 100%;
+}
+
+.form-group.error .error-icon{
+  display: block;
 }
 
 .auth-layout form input{
@@ -846,6 +885,9 @@ video {
 }
 
 .btn-primary{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.5rem;
   border-width: 1px;
   border-color: transparent;
@@ -977,4 +1019,41 @@ video {
 .table-content table tbody tr:nth-child(even){
   background-color: hsl(var(--taupe-gray) / var(--tw-bg-opacity, 1));
   --tw-bg-opacity: 0.05;
+}
+
+.modal{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  min-height: 100svh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+  --tw-bg-opacity: 0.1;
+  padding: 1rem;
+}
+
+.modal-body{
+  width: 100%;
+  max-width: 36rem;
+}
+
+.modal-body > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.modal-body{
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }

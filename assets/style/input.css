@@ -61,7 +61,14 @@
 }
 
 .form-group input {
-  @apply border border-transparent;
+  @apply border border-transparent w-full rounded-[10px] border-light-silver py-2.5 px-3.5 text-sm font-inter text-onyx-black;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
+  box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
+}
+
+.form-group label {
+  @apply font-inter text-sm font-medium text-charcoal-gray block w-full;
 }
 
 .form-group.error .error-message {
@@ -69,7 +76,15 @@
 }
 
 .form-group.error input {
-  @apply border-crimson-red;
+  @apply border-crimson-red pr-8;
+}
+
+.form-group .error-icon {
+  @apply absolute hidden  inset-y-0 h-full right-2;
+}
+
+.form-group.error .error-icon {
+  @apply block;
 }
 
 .auth-layout form input {
@@ -139,7 +154,7 @@
 }
 
 .btn-primary {
-  @apply rounded-lg py-2.5 px-3 border border-transparent font-montserrat text-xs font-bold;
+  @apply rounded-lg py-2.5 px-3 border border-transparent font-montserrat text-xs font-bold flex items-center justify-center;
 }
 
 .btn-primary.fill {
@@ -205,4 +220,12 @@
 
 .table-content table tbody tr:nth-child(even) {
   @apply bg-taupe-gray bg-opacity-5;
+}
+
+.modal {
+  @apply fixed left-0 top-0 w-full overflow-y-auto min-h-svh bg-black bg-opacity-10 flex flex-col items-center justify-center p-4;
+}
+
+.modal-body {
+  @apply bg-white py-6 px-8 w-full max-w-xl rounded-lg space-y-8;
 }
