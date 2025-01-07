@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sora:wght@100..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --snow-white: 0 0% 98%; /* #fbfbfb */
+  --taupe-gray: 22 5% 52%; /* #8b8480 */
+  --light-coral: 0 73% 73%; /* #ec8686 */
+  --tan: 25 47% 65%; /* #d09f7c */
+  --gainsboro: 0 0% 88%; /* #e0e0e0 */
+  --spanish-gray: 0 0% 62%; /* #9e9e9e */
+  --alabaster: 0 9% 94%; /* #f0eded */
+  --outer-space: 0 1% 27%; /* #454343 */
+  --charcoal-gray: 221 11% 29%; /* #414651 */
+  --storm-gray: 220 6% 47%; /* #717680 */
+  --light-silver: 216 6% 85%; /* #d5d7da */
+  --jet-black: 0 0% 14%; /* #242424 */
+  --dim-gray: 0 0% 40%; /* #666666 */
+  --slate-gray: 210 5% 45%; /* #6c7278 */
+  --silver: 0 0% 80%; /* #cccccc */
+  --crimson-red: 4 86% 58%; /* #f04438 */
+  --ash-gray: 0 2% 58%; /* #979393 */
+  --gunmetal: 0 2% 31%; /* #504d4d */
+  --cerulean-blue: 220 76% 60%; /* #4d81e7 */
+  --onyx-black: 210 7% 11%; /* #1a1c1e */
+}
+
+.auth-layout {
+  @apply w-full h-dvh flex items-center justify-center relative overflow-hidden;
+}
+
+.blur-box-1 {
+  filter: blur(590px);
+  @apply w-[100dvw] h-[100dvh] bg-[#c5c5c5] rounded-full absolute -right-1/4  -bottom-1/4;
+}
+
+.blur-box-2 {
+  filter: blur(368px);
+  @apply w-[100dvw] h-[100dvh] bg-[#EBC894] rounded-full absolute -left-1/2  -top-1/4;
+}
