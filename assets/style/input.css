@@ -25,10 +25,12 @@
   --gunmetal: 0 2% 31%; /* #504d4d */
   --cerulean-blue: 220 76% 60%; /* #4d81e7 */
   --onyx-black: 210 7% 11%; /* #1a1c1e */
+  --raven-black: 221 39% 11%; /* #111827 */
+  --ice-mist: 200 20% 94%; /* #EDF1F3 */
 }
 
 .auth-layout {
-  @apply w-full h-dvh flex items-center justify-center relative overflow-hidden;
+  @apply w-full  flex min-h-svh flex-col items-center justify-center p-6 relative overflow-hidden;
 }
 
 .blur-box-1 {
@@ -39,4 +41,49 @@
 .blur-box-2 {
   filter: blur(368px);
   @apply w-[100dvw] h-[100dvh] bg-[#EBC894] rounded-full absolute -left-1/2  -top-1/4;
+}
+
+.auth-layout form {
+  @apply space-y-6 p-6 border border-solid border-white bg-white bg-opacity-60 min-w-[420px] max-w-[420px] relative z-50 rounded-xl;
+}
+
+.form-group {
+  @apply w-full space-y-1.5;
+}
+
+.form-group .error-message {
+  @apply text-crimson-red text-sm hidden;
+}
+
+.form-group input {
+  @apply border border-transparent;
+}
+
+.form-group.error .error-message {
+  @apply block;
+}
+
+.form-group.error input {
+  @apply border-crimson-red;
+}
+
+.auth-layout form input {
+  @apply w-full rounded-[10px] border-ice-mist py-3 px-3.5 text-sm font-inter text-onyx-black;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
+  box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
+}
+
+.auth-layout form .submit-btn {
+  @apply w-full py-3 rounded-xl bg-tan text-white font-inter font-bold text-base;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(208, 159, 124, 0.48),
+    0px 0px 0px 1px rgb(208, 159, 124);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(208, 159, 124, 0.48),
+    0px 0px 0px 1px rgb(208, 159, 124);
+  box-shadow: 0px 1px 2px 0px rgba(208, 159, 124, 0.48),
+    0px 0px 0px 1px rgb(208, 159, 124);
+}
+
+.auth-layout form input[type="checkbox"] {
+  @apply border-slate-gray bg-transparent;
 }
