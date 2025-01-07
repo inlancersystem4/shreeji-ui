@@ -34,6 +34,7 @@ module.exports = {
         "onyx-black": "hsl(var(--onyx-black) / <alpha-value>)",
         "raven-black": "hsl(var(--raven-black) / <alpha-value>)",
         "ice-mist": "hsl(var(--ice-mist) / <alpha-value>)",
+        "shadow-gray": "hsl(var(--shadow-gray) / <alpha-value>)",
       },
     },
   },

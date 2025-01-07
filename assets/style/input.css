@@ -27,6 +27,11 @@
   --onyx-black: 210 7% 11%; /* #1a1c1e */
   --raven-black: 221 39% 11%; /* #111827 */
   --ice-mist: 200 20% 94%; /* #EDF1F3 */
+  --shadow-gray: 0 1% 41%; /* #696767 */
+}
+
+.custom-container {
+  @apply w-full max-w-[1236px] px-3 mx-auto;
 }
 
 .auth-layout {
@@ -86,4 +91,93 @@
 
 .auth-layout form input[type="checkbox"] {
   @apply border-slate-gray bg-transparent;
+}
+
+.layout-wrapper {
+  @apply w-full h-svh flex flex-col;
+}
+
+.layout-header {
+  @apply w-full bg-snow-white py-6;
+}
+
+.nav-list {
+  @apply gap-9 flex items-center;
+}
+
+.nav-list a {
+  @apply font-inter text-base p-1 font-medium text-shadow-gray;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.active {
+  @apply text-tan;
+}
+
+.content-wrapper {
+  @apply w-full h-full flex flex-col justify-between;
+}
+
+.main-content {
+  @apply h-full w-full;
+}
+
+.layout-footer {
+  @apply w-full bg-alabaster text-center py-4;
+}
+
+.search-input-group {
+  @apply relative;
+}
+
+.search-input-group input {
+  @apply border border-spanish-gray rounded-lg p-2 outline-none w-full pl-8 placeholder:text-spanish-gray text-xs font-montserrat;
+}
+.search-input-group .icon {
+  @apply absolute top-1/2 -translate-y-1/2 left-2 -mt-0.5;
+}
+
+.btn-primary {
+  @apply rounded-lg py-2.5 px-3 border border-transparent font-montserrat text-xs font-bold;
+}
+
+.btn-primary.fill {
+  @apply bg-tan text-white;
+}
+
+.btn-primary.outline {
+  @apply border-tan text-tan;
+}
+
+.btn-primary.fill:hover {
+  @apply border-tan bg-transparent text-tan;
+}
+
+.btn-primary.outline:hover {
+  @apply bg-tan text-white;
+}
+
+.paginations {
+  @apply flex items-center gap-3;
+}
+
+.page-btn-list {
+  @apply flex items-stretch gap-3;
+}
+
+.page-btn-list button {
+  @apply min-w-8 min-h-8 max-w-8 max-h-8 flex items-center justify-center rounded-lg font-montserrat text-black bg-gainsboro text-xs font-medium;
+}
+
+.page-btn-list button.active {
+  @apply bg-tan text-white;
+}
+
+.paginations .step-btn {
+  @apply font-montserrat text-xs text-spanish-gray p-1.5 rounded-lg;
+}
+
+.paginations .step-btn:hover {
+  @apply bg-gainsboro text-outer-space;
 }
