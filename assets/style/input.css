@@ -61,11 +61,16 @@
 }
 
 .form-group input,
-.form-group select {
+.form-group select,
+.form-group textarea {
   @apply border border-transparent w-full rounded-[10px] border-light-silver py-2.5 px-3.5 text-sm font-inter text-onyx-black;
   -webkit-box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
   -moz-box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
   box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
+}
+
+.form-group textarea {
+  @apply min-h-24 resize-none;
 }
 
 .form-group select {
@@ -147,7 +152,7 @@
 }
 
 .main-content {
-  @apply h-full w-full;
+  @apply h-auto w-full;
 }
 
 .layout-footer {
@@ -166,7 +171,7 @@
 }
 
 .btn-primary {
-  @apply rounded-lg py-2.5 px-3 border border-transparent font-montserrat text-xs font-bold flex items-center justify-center;
+  @apply rounded-lg py-2.5 px-3 border border-transparent font-montserrat text-xs font-bold outline-none flex items-center justify-center;
 }
 
 .btn-primary.fill {

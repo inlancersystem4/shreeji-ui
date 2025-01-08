@@ -33,10 +33,10 @@
                   <a href="#">Home</a>
                 </li>
                 <li>
-                  <a href="#">Add Orders</a>
+                  <a href="#" class="active">Add Orders</a>
                 </li>
                 <li>
-                  <a href="#" class="active">View Items</a>
+                  <a href="#">View Items</a>
                 </li>
               </ul>
             </div>
@@ -46,7 +46,7 @@
       <section class="content-wrapper">
         <section class="main-content">
           <div class="custom-container">
-            <div class="flex items-center gap-3 py-4">
+            <a href="#" class="flex items-center gap-3 py-4">
               <svg
                 width="11"
                 height="12"
@@ -60,9 +60,9 @@
                 />
               </svg>
               <h1 class="text-jet-black font-sora font-semibold text-xl">
-                Add Order
+                Add Item
               </h1>
-            </div>
+            </a>
             <form
               action="#"
               method="post"
@@ -71,12 +71,12 @@
               <div class="w-full space-y-4">
                 <div class="grid grid-cols-2 gap-6">
                   <div class="form-group">
-                    <label for="name">Customer name</label>
+                    <label for="name">Item name</label>
                     <div class="relative">
                       <input
                         type="text"
                         id="name"
-                        placeholder="Enter customer name"
+                        placeholder="Enter Item  name"
                       />
                       <svg
                         width="16"
@@ -98,12 +98,12 @@
                     <p class="error-message">set error here</p>
                   </div>
                   <div class="form-group">
-                    <label for="number">Phone number</label>
+                    <label for="placement">Item Placement</label>
                     <div class="relative">
                       <input
-                        type="number"
-                        id="number"
-                        placeholder="Enter phone number"
+                        type="text"
+                        id="placement"
+                        placeholder="Enter  Item placement"
                       />
                       <svg
                         width="16"
@@ -125,112 +125,31 @@
                     <p class="error-message">set error here</p>
                   </div>
                 </div>
-                <div class="table-content">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th class="font-montserrat font-bold text-sm">
-                          Catalogue / Item name
-                        </th>
-                        <th class="font-montserrat font-bold text-sm">
-                          Placement
-                        </th>
-                        <th class="font-montserrat font-bold text-sm">
-                          Selected Items
-                        </th>
-                        <th
-                          class="font-montserrat font-bold text-sm !text-center"
-                        >
-                          Action
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="max-w-[200px] min-w-[200px]">
-                          <p class="font-medium font-montserrat text-sm">
-                            Sofa Catalogue
-                          </p>
-                        </td>
-                        <td class="max-w-[200px] min-w-[200px]">
-                          <p class="font-medium font-montserrat text-sm">
-                            Floor1 B2
-                          </p>
-                        </td>
-                        <td class="min-w-[250px]">
-                          <p class="font-jakarta text-xs text-outer-space">
-                            7 Items
-                          </p>
-                        </td>
-                        <td class="max-w-[100px] min-w-[100px]">
-                          <div class="flex items-center justify-center gap-2.5">
-                            <button class="table-action-btn">
-                              <svg
-                                width="25"
-                                height="24"
-                                viewBox="0 0 25 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M15.6667 12C15.6667 13.6569 14.3236 15 12.6667 15C11.0099 15 9.66675 13.6569 9.66675 12C9.66675 10.3431 11.0099 9 12.6667 9C14.3236 9 15.6667 10.3431 15.6667 12Z"
-                                  stroke="#807A7A"
-                                  stroke-width="1.5"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M12.6672 5C8.18956 5 4.39927 7.94288 3.125 12C4.39925 16.0571 8.18955 19 12.6672 19C17.1448 19 20.9351 16.0571 22.2094 12C20.9351 7.94291 17.1448 5 12.6672 5Z"
-                                  stroke="#807A7A"
-                                  stroke-width="1.5"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                            </button>
-                            <button class="table-action-btn">
-                              <svg
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M3 6H5H21"
-                                  stroke="#A30D11"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z"
-                                  stroke="#A30D11"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M10 11V17"
-                                  stroke="#A30D11"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M14 11V17"
-                                  stroke="#A30D11"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="w-full rounded-lg border border-[#E8EBEC] p-2">
+                  <div class="flex items-center justify-center w-full py-4">
+                    <button
+                      type="button"
+                      class="btn-primary outline min-w-[180px] !font-medium mx-auto h-10 text-base"
+                    >
+                      <svg
+                        class="mr-2"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 13 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.5 0.75V11.25M1.25 6H11.75"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Select Image
+                    </button>
+                  </div>
                 </div>
                 <div class="form-group">
                   <label for="note">Notes</label>
@@ -279,62 +198,11 @@
                   <p class="error-message">set error here</p>
                 </div>
               </div>
-              <div class="space-y-4">
-                <button
-                  type="button"
-                  class="btn-primary outline min-w-[220px] !font-semibold mx-auto h-11 text-lg"
-                >
-                  <svg
-                    class="mr-2"
-                    width="14"
-                    height="14"
-                    viewBox="0 0 13 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.5 0.75V11.25M1.25 6H11.75"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  Add Item
-                </button>
-                <p
-                  class="text-center font-inter font-medium text-lg text-shadow-gray"
-                >
-                  Or
-                </p>
-                <button
-                  type="button"
-                  class="btn-primary outline min-w-[220px] !font-semibold mx-auto h-11 text-lg"
-                >
-                  <svg
-                    class="mr-2"
-                    width="14"
-                    height="14"
-                    viewBox="0 0 13 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.5 0.75V11.25M1.25 6H11.75"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  Select Item
-                </button>
-              </div>
               <button
                 type="submit"
                 class="btn-primary fill min-w-[320px] mx-auto h-11 text-lg"
               >
-                Save Order
+                Save Item
               </button>
             </form>
           </div>
