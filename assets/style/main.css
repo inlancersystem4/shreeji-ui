@@ -692,7 +692,8 @@ video {
   color: hsl(var(--crimson-red) / var(--tw-text-opacity, 1));
 }
 
-.form-group input{
+.form-group input,
+.form-group select{
   width: 100%;
   border-radius: 10px;
   border-width: 1px;
@@ -709,6 +710,19 @@ video {
   --tw-text-opacity: 1;
   color: hsl(var(--onyx-black) / var(--tw-text-opacity, 1));
   box-shadow: 0px 1px 2px 0px rgba(228, 229, 231, 0.24);
+}
+
+.form-group select{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../img/chevron-down.svg");
+  background-position: center right 12px;
+  background-repeat: no-repeat;
+}
+
+.form-group.error select {
+  background-position: center right 24px;
 }
 
 .form-group label{
@@ -1056,4 +1070,13 @@ video {
   padding-bottom: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+form.item-add label{
+  font-family: Plus Jakarta Sans, serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: hsl(var(--dim-gray) / var(--tw-text-opacity, 1));
 }
