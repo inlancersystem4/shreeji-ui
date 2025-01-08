@@ -250,3 +250,15 @@
 form.item-add label {
   @apply font-jakarta font-semibold text-base text-dim-gray;
 }
+
+.selected-img-list {
+  @apply grid grid-cols-6 gap-4 w-full;
+}
+
+.selected-img-list li {
+  @apply relative pt-[96%] w-full;
+}
+
+.selected-img-list li img {
+  @apply absolute inset-0 w-full  object-cover rounded-lg h-full;
+}

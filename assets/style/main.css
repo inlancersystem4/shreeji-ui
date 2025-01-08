@@ -1088,3 +1088,26 @@ form.item-add label{
   --tw-text-opacity: 1;
   color: hsl(var(--dim-gray) / var(--tw-text-opacity, 1));
 }
+
+.selected-img-list{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.selected-img-list li{
+  position: relative;
+  width: 100%;
+  padding-top: 96%;
+}
+
+.selected-img-list li img{
+  position: absolute;
+  inset: 0px;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
